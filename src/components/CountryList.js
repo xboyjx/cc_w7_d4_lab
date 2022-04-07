@@ -9,9 +9,14 @@ const CountryList = ({countries}) => {
 
     return(
         <div>
-            <ul>
-                {countryItems}
-            </ul>
+            <table>
+                <tr>
+                    <th>Country Name</th>
+                    <th>Population</th>
+                    <th>Region</th>
+                </tr>
+                    {countryItems}
+            </table>
         </div>
     );
 };

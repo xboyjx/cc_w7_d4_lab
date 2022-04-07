@@ -3,7 +3,13 @@ import React from "react";
 const CountryItem = ({country}) => {
 
     return (
-        <li>{country.name}</li>
+        <>
+        <tr>
+            <td>{country.name}</td>
+            <td>{country.population}</td>
+            <td>{country.region}</td>
+        </tr>
+        </>
     )
 }
 
