@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from "react";
+import CountryList from "../components/CountryList";
 
 const CountryContainer = () => {
 
@@ -20,7 +21,9 @@ const CountryContainer = () => {
 
 
     return (
-        
+        <div>
+            <CountryList countries={countries} />
+        </div>
     );
 };
 
