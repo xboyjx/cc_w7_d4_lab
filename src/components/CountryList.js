@@ -1,10 +1,10 @@
 import React from "react";
 import CountryItem from "./CountryItem";
 
-const CountryList = ({countries, onCountryClick}) => {
+const CountryList = ({countries, onCountryClick, onFavoriteButtonClick}) => {
 
     const countryItems = countries.map((country, index) => {
-        return <CountryItem country={country} key={index} onCountryClick={onCountryClick}/>
+        return <CountryItem country={country} key={index} onCountryClick={onCountryClick} onFavoriteButtonClick={onFavoriteButtonClick}/>
     });
 
     return(
@@ -15,6 +15,7 @@ const CountryList = ({countries, onCountryClick}) => {
                     <th>Population</th>
                     <th>Region</th>
                     <th>Flag</th>
+                    <th>Favourite?</th>
                 </tr>
                     {countryItems}
             </table>
